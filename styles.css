@@ -154,7 +154,7 @@ LANDING
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 12.8rem;
+  margin-bottom: 16rem;
 }
 
 .landing-scroll__command {
@@ -238,7 +238,9 @@ APPLE PIE
 
 .apple-pie {
   width: 100%;
+  height: 100%;
   max-width: 600px;
+  max-height: 600px;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -250,7 +252,7 @@ APPLE PIE
 
 .apple-pie__img {
   width: 100%;
-  transform: scale(1.1) translateX(-14px);
+  transform: scale(1.1) translateX(-10px);
 }
 
 /*

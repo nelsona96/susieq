@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Damion&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap");
+
+/* 
+
+GLOBAL 
+
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Sofia Sans", sans-serif;
+}
+
+.container {
+  padding: 24px 0;
+}
+
+.row {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursive {
+  font-family: "Damion", cursive;
+  font-weight: 300;
+  font-size: 9.6rem;
+}
+
+/* 
+
+HEADER 
+
+*/
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 0.4rem 2.4rem 0 2.4rem;
+  background: linear-gradient(to bottom, #c59fc5 90%, #d8bfd8 100%);
+}
+
+.header-message {
+  font-family: "Damion", cursive;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #242424;
+  transform: translateY(0.3rem);
+  z-index: 10;
+}
+
+/* 
+
+NAV 
+
+*/
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 0.8rem 2.4rem 0.8rem 2.4rem;
+  background-color: #d8bfd8;
+}
+
+.nav-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #000;
+}
+
+.nav-links {
+  margin-top: 1.6rem;
+}
+
+.nav-link {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 4.8rem;
+  color: #000;
+}
+
+/* 
+
+LANDING 
+
+*/
+
+#landing {
+  background-color: #f5f5f5;
+  padding: 0 2.4rem;
+}
+
+#landing .container {
+    padding-top: 48px;
+}
+
+#landing .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: calc(100vh - 13.2rem);
+}
+
+.landing-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-description__title {
+  font-size: 7.2rem;
+  line-height: 0.96;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.h1-break {
+  display: none;
+}
+
+.landing-description__para {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.landing-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4.8rem;
+}
+
+.landing-scroll__command {
+  font-size: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #242424;
+  margin-bottom: 4.8rem;
+}
+
+.scroll-arrow {
+  width: 7rem;
+  height: 7rem;
+  color: #242424;
+}
+
+/* 
+
+SCROLL-SPACE 
+
+*/
+
+#scroll-space .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scroll-space {
+  height: calc(100vh - 4rem);
+  background-color: #f5f5f5;
+}
+
+.scroll-command {
+  font-size: 3.2em;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #242424;
+  margin-bottom: 4.8rem;
+}
+
+/* 
+
+APPLE PIE 
+
+*/
+
+#apple-pie {
+  background-color: #f5f5f5;
+  padding: 0 2.4rem;
+}
+
+#apple-pie .row {
+  height: calc(100vh - 10.4rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.apple-pie {
+  width: 100%;
+  max-width: 800px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #FFC1CC;
+  border-radius: 60%;
+  box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.125);
+}
+
+.apple-pie__img {
+  width: 100%;
+}
+
+/*
+
+MEDIA QUERIES 
+
+*/
+
+@media (max-width: 864px) {
+  html {
+    font-size: 58%;
+  }
+
+  .nav-link:not(:last-child) {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  html {
+    font-size: 53.5%;
+  }
+
+  .nav-links {
+    margin-top: 0;
+  }
+
+  .h1-break {
+    display: inline;
+  }
+}
